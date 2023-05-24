@@ -1,4 +1,4 @@
-# witty-overlords
+# Exploring LLMs for Software Engineering
 
 Example output of exploring large language models for software engineering.
 
