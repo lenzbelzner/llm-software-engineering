@@ -6,11 +6,13 @@ Here I want to explore potential benefits and challenges associated with the ado
 
 ## System Design: Requirements Bot
 
-Here's a bot supporting me with system design and requirements engineering: https://zen-reqbot.streamlit.app/. I found that my initial specs where heavily underspecified, and created this bot to help me refining my ideas and requirements. To me it feels much easier to have a conversation about my ideas than to start writing on a blank page. :)
+I found that my initial specs where heavily underspecified, and created this bot to help me refining my ideas and requirements. To me it feels much easier to have a conversation about my ideas than to start writing on a blank page. :)
+
+Here's the bot: https://zen-reqbot.streamlit.app/
 
 ## System Design: Epics and Stories Generation
 
-My input:
+Input:
 > I want to create a webapp for a trading card game.
 > Players can collect cards for heroes and items, trade cards,
 > go to exploration and battle with their cards, and collect loot from these actions.
