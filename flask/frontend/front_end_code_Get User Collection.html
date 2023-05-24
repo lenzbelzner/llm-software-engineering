@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-10">
+        <h1 class="text-4xl font-bold mb-6">User Collection</h1>
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form hx-get="/api/user-collection" hx-trigger="submit" hx-target="#user-collection">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Username
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" name="username" placeholder="Enter your username" required>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Get Collection
+                </button>
+            </form>
+        </div>
+        <div id="user-collection" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- User collection cards will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        document.body.addEventListener('htmx:afterOnLoad', function (event) {
+            const data = event.detail.content;
+            let cardsHtml = '';
+
+            data.forEach(card => {
+                cardsHtml += `
+                    <div class="bg-white shadow-md rounded p-4">
+                        <img src="${card.image}" alt="${card.name}" class="w-full h-48 object-cover mb-4">
+                        <h2 class="text-xl font-bold mb-2">${card.name}</h2>
+                        <p>${card.description}</p>
+                    </div>
+                `;
+            });
+
+            document.getElementById('user-collection').innerHTML = cardsHtml;
+        });
+    </script>
+</body>
+</html>
