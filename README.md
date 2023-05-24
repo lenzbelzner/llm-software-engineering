@@ -9,9 +9,9 @@ My input:
 > Players can collect cards for heroes and items, trade cards,
 > go to exploration and battle with their cards, and collect loot from these actions.
 
-See created milestones/epics in issues [here](https://github.com/lenzbelzner/llm-software-engineering/milestones).
+See created milestones/epics [here](https://github.com/lenzbelzner/llm-software-engineering/milestones).
 
-See created stories in issues [here](https://github.com/lenzbelzner/llm-software-engineering/issues).
+See created stories [here](https://github.com/lenzbelzner/llm-software-engineering/issues).
 
 ## Implementation
 
