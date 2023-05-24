@@ -4,11 +4,11 @@ Software Engineering (SE) has traditionally been a highly manual, human-driven p
 
 Here I want to explore potential benefits and challenges associated with the adoption of LLMs in software engineering, with a particular focus on requirements engineering, system design, code and test generation, and code quality reviews.
 
-## System Design Bot
+## System Design: Requirements Bot
 
 Here's a bot supporting me with system design and requirements engineering: https://zen-reqbot.streamlit.app/. I found that my initial specs where heavily underspecified, and created this bot to help me refining my ideas and requirements. To me it feels much easier to have a conversation about my ideas than to start writing on a blank page. :)
 
-## System Design: Epics and Stories Creation
+## System Design: Epics and Stories Generation
 
 My input:
 > I want to create a webapp for a trading card game.
@@ -19,7 +19,7 @@ See created milestones/epics [here](https://github.com/lenzbelzner/llm-software-
 
 See created stories [here](https://github.com/lenzbelzner/llm-software-engineering/issues).
 
-## Implementation
+## Implementation: Code and Artifact Generation
 
 Disclaimer: The generated code is not complete, correct, nor executable without further editing.
 
