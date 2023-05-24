@@ -1,6 +1,8 @@
-# Exploring LLMs for Software Engineering
+# Exploring Large Language Models for Software Engineering
 
-Example output of exploring large language models for software engineering.
+Software Engineering (SE) has traditionally been a highly manual, human-driven process that involves a range of activities from requirement gathering and analysis, to system design, implementation, and testing. Recent advances in artificial intelligence (AI) have led to the development of powerful natural language processing models such as OpenAI's GPT, known as large language models (LLMs). These LLMs have opened a wide array of applications in various domains, including application in software engineering processes.
+
+Here I want to explore potential benefits and challenges associated with the adoption of LLMs in software engineering, with a particular focus on requirements engineering, system design, code and test generation, and code quality reviews.
 
 ## System Design: Epics and Stories Creation
 
@@ -14,6 +16,8 @@ See created milestones/epics [here](https://github.com/lenzbelzner/llm-software-
 See created stories [here](https://github.com/lenzbelzner/llm-software-engineering/issues).
 
 ## Implementation
+
+Disclaimer: The generated code is not complete, correct, nor executable without further editing.
 
 Currently there are two generated code skeletons, one for a flask app and one for a streamlit app. The specification used for code generation is a little more involved than the input for epics and stories. You can find it in [spec.md](https://github.com/lenzbelzner/llm-software-engineering/blob/main/spec.md). I created it using my requirement engineering bot: https://zen-reqbot.streamlit.app/.
 
